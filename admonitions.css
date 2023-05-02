@@ -9,6 +9,7 @@
 .admonitions > .title {
     padding: 0.5em 1em 0.5em 0.5em;
     border-radius: 0px;
+    text-align: left;
     font-family:apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
 }
 .admonitions > div {
@@ -27,16 +28,17 @@
     font-weight: bolder;
 }
 .abstract > .title::before {
-    content:"📜 ";
+    content:"📜";
     font-size: 150% ;
+    display: inline-block;
     vertical-align:middle;
 }
 .abstract > .icon2::before {
-    content:"📃 ";
+    content:"📃";
     font-size: 150% ;
 }
 .abstract > .icon3::before {
-    content:"🧾 ";
+    content:"🧾";
     font-size: 150% ;
 }
 
@@ -51,24 +53,24 @@
     font-weight: bolder;
 }
 .note > .title::before {
-    content:"📝 ";
+    content:"📝";
     font-size: 150% ;
     vertical-align:middle;
 }
 .note > .icon2::before {
-    content:"📌 ";
+    content:"📌";
     font-size: 150% ;
 }
 .note > .icon3::before {
-    content:"☕ ";
+    content:"☕";
     font-size: 150% ;
 }
 .note > .icon4::before {
-    content:"🍵 ";
+    content:"🍵";
     font-size: 150% ;
 }
 .note > .icon5::before {
-    content:"📧 ";
+    content:"📧";
     font-size: 150% ;
 }
 
@@ -83,32 +85,32 @@
     font-weight: bolder;
 }
 .hint > .title::before {
-    content:"🔎 ";
+    content:"🔎";
     font-size: 150% ;
     vertical-align:middle;
 }
 .hint > .icon2::before {
-    content:"🔰 ";
+    content:"🔰";
     font-size: 150% ;
 }
 .hint > .icon3::before {
-    content:"💡 ";
+    content:"💡";
     font-size: 150% ;
 }
 .hint > .icon4::before {
-    content:"👩‍🏫 ";
+    content:"👩‍🏫";
     font-size: 150% ;
 }
 .hint > .icon5::before {
-    content:"🔮 ";
+    content:"🔮";
     font-size: 150% ;
 }
 .hint > .icon6::before {
-    content:"💭 ";
+    content:"💭";
     font-size: 150% ;
 }
 .hint > .icon7::before {
-    content:"🗯 ";
+    content:"🗯";
     font-size: 150% ;
 }
 
@@ -138,16 +140,17 @@
     overflow-y: auto;
 }
 .example > .title::before {
-    content:"👣 ";
+    margin-right: 0.25em;
+    content:"👣";
     font-size: 150% ;
     vertical-align:middle;
 }
 .example > .icon2::before {
-    content:"🐾 ";
+    content:"🐾";
     font-size: 150% ;
 }
 .example > .icon3::before {
-    content:"🍽 ";
+    content:"🍽";
     font-size: 150% ;
 }
 
@@ -168,35 +171,34 @@
     font-weight: bolder;
 }
 .thinking > .title::before {
-    margin-right: 0.25em;
-    content:"⏳ ";
+    content:"⏳";
     font-size: 150% ;
     vertical-align:middle;
     animation: animation_thinking_rotation 3s infinite linear;
     display: inline-block;
 }
 .thinking > .icon2::before {
-    content:"⏲ ";
+    content:"⏲";
     font-size: 150% ;
 }
 .thinking > .icon3::before {
-    content:"💬 ";
+    content:"💬";
     font-size: 150% ;
 }
 .thinking > .icon4::before {
-    content:"🤔 ";
+    content:"🤔";
     font-size: 150% ;
 }
 .thinking > .icon5::before {
-    content:"✏ ";
+    content:"✏";
     font-size: 150% ;
 }
 .thinking > .icon6::before {
-    content:"🌲 ";
+    content:"🌲";
     font-size: 150% ;
 }
 .thinking > .icon7::before {
-    content:"🕛 ";
+    content:"🕛";
     font-size: 150% ;
     animation: clock_animation 12s infinite linear;
 }
@@ -242,26 +244,27 @@
     font-weight: bolder;
 }
 .information > .title::before {
-    content:"ⓘ ";
+    margin-right:0.25em;
+    content:"ⓘ";
     font-size: 175% ;
     font-weight:bolder;
     color:rgb(2, 43, 243);
     vertical-align:middle;
 }
 .information > .icon2::before {
-    content:"🎁 ";
+    content:"🎁";
     font-size: 150% ;
 }
 .information > .icon2::before {
-    content:"🔖 ";
+    content:"🔖";
     font-size: 150% ;
 }
 .information > .icon3::before {
-    content:"👍 ";
+    content:"👍";
     font-size: 150% ;
 }
 .information > .icon4::before {
-    content:"🧐 ";
+    content:"🧐";
     font-size: 150% ;
 }
 
@@ -276,24 +279,25 @@
     font-weight: bolder;
 }
 .reference > .title::before {
-    content:"📘 ";
+    margin-right: 0.25em;
+    content:"📘";
     font-size: 150% ;
     vertical-align:middle;
 }
 .reference > .icon2::before {
-    content:"📖 ";
+    content:"📖";
     font-size: 150% ;
 }
 .reference > .icon3::before {
-    content:"📚 ";
+    content:"📚";
     font-size: 150% ;
 }
 .reference > .icon4::before {
-    content:"🌏 ";
+    content:"🌏";
     font-size: 150% ;
 }
 .reference > .icon5::before {
-    content:"🗺 ";
+    content:"🗺";
     font-size: 150% ;
 }
 
@@ -309,7 +313,7 @@
 }
 .important > .title::before {
     margin-right: 0.25em;
-    content:"🧿 ";
+    content:"🧿";
     font-size: 150% ;
     font-weight:bolder;
     vertical-align:middle;
@@ -317,20 +321,19 @@
     animation: important_press_animation 2s infinite linear;
 }
 .important > .icon2::before {
-    content:"👊 ";
+    content:"👊";
     font-size: 150% ;
     font-weight:bolder;
 }
 .important > .icon3::before {
-    content:"👀 ";
+    content:"👀";
     font-size: 150% ;
     font-weight:bolder;
     display: inline-block;
     animation: 2s anim-flipX steps(2,jump-none) infinite;
 }
 .important > .icon4::before {
-    margin-right:0.25em;
-    content:"✍ ";
+    content:"✍";
     font-size: 150% ;
     font-weight:bolder;
     font-weight:bolder;
@@ -339,7 +342,7 @@
     animation: animation_thinking_rotation 1.5s infinite linear;
 }
 .important > .icon5::before {
-    content:"🗣 ";
+    content:"🗣";
     font-size: 150% ;
     font-weight:bolder;
     color:red;
@@ -443,7 +446,7 @@ span.important_phrase3::before {
 }
 .warning > .title::before {
     margin-right:0.25em;
-    content:"⚠ ";
+    content:"⚠";
     font-size: 150% ;
     font-weight:bolder;
     font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -454,20 +457,20 @@ span.important_phrase3::before {
     animation: vibration_horizontal_animation 0.5s  infinite;
     }
 .warning > .icon2::before {
-    content:"💣 ";
+    content:"💣";
     font-size: 150% ;
     animation: vibration_animation 0.5s  infinite;
 }
 .warning > .icon3::before {
-    content:"🌋 ";
+    content:"🌋";
     font-size: 150% ;
 }
 .warning > .icon4::before {
-    content:"😨 ";
+    content:"😨";
     font-size: 150% ;
 }
 .warning > .icon5::before {
-    content:"🚧 ";
+    content:"🚧";
     font-size: 150% ;
 }
 /* CSSだけでブルブル震わせる | q-Az https://q-az.net/buruburu-hurueru-css/ */
@@ -510,10 +513,10 @@ span.important_phrase3::before {
     font-weight: bolder;
 }
 .error > .title::before {
-    content:"🔥 ";
+    margin-right:0.25em;
+    content:"🔥";
     font-size: 175% ;
     vertical-align:middle;
-    margin-right:0.25em;
     display:inline-block;
     animation-name: spin, depth;
     animation-timing-function: linear;
@@ -521,19 +524,19 @@ span.important_phrase3::before {
     animation-duration: 6s;
 }
 .error > .icon2::before {
-    content:"🚨 ";
+    content:"🚨";
     font-size: 175% ;
 }
 .error > .icon3::before {
-    content:"😡 ";
+    content:"😡";
     font-size: 175% ;
 }
 .error > .icon4::before {
-    content:"💢 ";
+    content:"💢";
     font-size: 175% ;
 }
 .error > .icon5::before {
-    content:"😵 ";
+    content:"😵";
     font-size: 175% ;
     animation: rotate_360_animation 2s linear infinite;
 }
@@ -555,23 +558,23 @@ span.important_phrase3::before {
     font-weight: bolder;
 }
 .fatal > .title::before {
-    content:"💀 ";
-    font-size: 175% ;
     margin-right:0.25em;
+    content:"💀";
+    font-size: 175% ;
     vertical-align:middle;
     display:inline-block;
     animation: 4s anim-rotateX ease infinite;
 }
 .fatal > .icon2::before {
-    content:"⛔ ";
+    content:"⛔";
     font-size: 175% ;
 }
 .fatal > .icon3::before {
-    content:"🆖 ";
+    content:"🆖";
     font-size: 175% ;
 }
 .fatal > .icon4::before {
-    content:"🥵 ";
+    content:"🥵";
     font-size: 175% ;
 }
 
@@ -586,16 +589,17 @@ span.important_phrase3::before {
     font-weight: bolder;
 }
 .question > .title::before {
-    content:"❓ ";
+    margin-right: 0.25em;
+    content:"❓";
     font-size: 175% ;
     vertical-align:middle;
 }
 .question > .icon2::before {
-    content:"Q ";
+    content:"Q";
     font-size: 175% ;
 }
 .question > .icon3::before {
-    content:"🤨 ";
+    content:"🤨";
     font-size: 175% ;
 }
 
@@ -610,16 +614,17 @@ span.important_phrase3::before {
     font-weight: bolder;
 }
 .answer > .title::before {
-    content:"✔ ";
+    margin-right: 0.25em;
+    content:"✔";
     font-size: 175% ;
     vertical-align:middle;
 }
 .answer > .icon2::before {
-    content:"A ";
+    content:"A";
     font-size: 175% ;
 }
 .answer > .icon3::before {
-    content:"😉 ";
+    content:"😉";
     font-size: 175% ;
 }
 
@@ -634,27 +639,28 @@ span.important_phrase3::before {
     font-weight: bolder;
 }
 .topic > .title::before {
-    content:"🛎 ";
+    margin-right: 0.25em;
+    content:"🛎";
     font-size: 175% ;
     vertical-align:middle;
 }
 .topic > .icon2::before {
-    content:"🔊 ";
+    content:"🔊";
     font-size: 175% ;
     vertical-align:middle;
 }
 .topic > .icon3::before {
-    content:"🐬 ";
+    content:"🐬";
     font-size: 175% ;
     vertical-align:middle;
 }
 .topic > .icon4::before {
-    content:"🏮 ";
+    content:"🏮";
     font-size: 175% ;
     vertical-align:middle;
 }
 .topic > .icon5::before {
-    content:"🚦 ";
+    content:"🚦";
     font-size: 175% ;
     vertical-align:middle;
 }
@@ -670,7 +676,8 @@ span.important_phrase3::before {
     font-weight: bolder;
 }
 .quote > .title::before {
-    content:"📦 ";
+    margin-right: 0.25em;
+    content:"📦";
     font-size: 175% ;
     vertical-align:middle;
 }
@@ -678,7 +685,7 @@ span.important_phrase3::before {
     content:"";
 }
 .quote > .icon2::before {
-    content:"🗨 ";
+    content:"🗨";
     font-size: 200% ;
     color:white;
 }
@@ -723,7 +730,8 @@ span.important_phrase3::before {
     font-weight: bolder;
 }
 .secret > .title::before {
-    content:"㊙ ";
+    margin-right:0.25em;
+    content:"㊙";
     font-size: 200% ;
     font-weight:bolder;
     font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -732,7 +740,7 @@ span.important_phrase3::before {
     vertical-align:middle;
 }
 .secret > .icon2::before {
-    content:"🔐 ";
+    content:"🔐";
     font-size: 150% ;
     font-weight:bolder;
     font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -741,7 +749,7 @@ span.important_phrase3::before {
     vertical-align:middle;
 }
 .secret > .icon3::before {
-    content:"🛂 ";
+    content:"🛂";
     font-size: 150% ;
     font-weight:bolder;
     font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -750,7 +758,7 @@ span.important_phrase3::before {
     vertical-align:middle;
 }
 .secret > .icon4::before {
-    content:"🤐 ";
+    content:"🤐";
     font-size: 150% ;
     font-weight:bolder;
     font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -759,7 +767,7 @@ span.important_phrase3::before {
     vertical-align:middle;
 }
 .secret > .icon5::before {
-    content:"🤫 ";
+    content:"🤫";
     font-size: 150% ;
     font-weight:bolder;
     font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -768,7 +776,7 @@ span.important_phrase3::before {
     vertical-align:middle;
 }
 .secret > .icon6::before {
-    content:"🈲 ";
+    content:"🈲";
     font-size: 200%;
     font-weight:bolder;
     font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -777,7 +785,7 @@ span.important_phrase3::before {
     vertical-align:middle;
 }
 .secret > .icon7::before {
-    content:"🔇 ";
+    content:"🔇";
     font-size: 150% ;
     font-weight:bolder;
     font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
@@ -792,7 +800,7 @@ span.important_phrase3::before {
     100% {content:"🙈";}
 }
 .secret > .icon8::before {
-    content:"🙈 ";
+    content:"🙈";
     margin-right:0.25em;
     font-size: 150% ;
     font-weight:bolder;
