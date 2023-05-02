@@ -7,6 +7,14 @@ HTMLで、注記／参照リストなどを、CSSとUnicode絵文字で見栄え
 
 お硬い文書用ではなく、少しユニークな表現が許される文書用として作成
 
+まだ、使えそうなUnicode絵文字もリストアップ。
+
+### 定義されたスタイル項目
+
+大雑把に以下の分類に対してスタイルを定義
+
+Abstract(概要)、Note(ノート、コメント)、Hint(ヒント)、Example(例)、Thinking(考察／検討課題)、Refrence(参照/参考先)、Information(情報)、Important(重要項目)、Alert/Caution/Warning/Attention(注意/警告項目)、Error(エラー/間違い)、Fatal(致命的なエラー/間違い)、Question and Answer(質問と回答)、Topic(トピック)、Quote(引用参照)、Secret(秘密事項)
+
 ## 使い方
 
 HTML文書のHEAD部で`admonitions.css` を呼び出して使用する。
