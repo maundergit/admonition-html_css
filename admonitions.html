@@ -1,0 +1,1155 @@
+<html>
+    <head>
+        <style type="text/css">
+            body {
+                font-family:apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+            }
+            h1 {
+                border-top: solid 4pt darkblue;
+                border-left: solid 10pt darkblue;
+                border-bottom: solid 4pt darkblue;
+                border-right: solid 4pt darkblue;
+                padding-left: 0.25em;
+            }
+            h2 {
+                margin: 1em;
+                border-left: solid darkblue 10pt;
+                border-bottom: solid darkblue 4pt;
+                padding-left: 0.25em;
+            }
+            h3 {
+                margin: 1.25em;
+                border-bottom: solid blue 2pt;
+                padding-left:0.5em;
+            }
+            h4 {
+                margin: 1.5em;
+                border-bottom: dotted blue 2pt;
+                padding-left:0.5em;
+            }
+            h2.index {
+                margin: 1em;
+                border-left: none;
+                border-bottom: dashed rgb(120, 98, 1) 2pt;
+                padding-left: 0.5em;
+            }
+            fieldset {
+                margin-left: 2em;
+                margin-right: 2em;
+                font-size: 200%;
+            }
+            legend {
+                font-size:12pt;
+            }
+            div.index {
+                margin-top:1em;
+                text-align: right;
+            }
+            div.index > span {
+                padding:0.25 0.5em 0.25em 0.5em;
+                box-shadow: 2px 2px 2px 0px rgba(0, 0, 0, 0.5); 
+                background-color: #a8eec8;
+                border-radius: 3pt;
+                width:3em;
+                text-align: center;
+            }
+            div.index > span > a{
+                text-decoration: none;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: bolder;
+                color: black;
+            }
+            ul.index {
+                margin:1em 5% 1em 5%;
+            }
+        </style>
+        <link rel="stylesheet" href="admonitions.css">
+        <style type="text/css">
+            fieldset {
+                font-family:apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="Admonitions">Admonitions</h1>
+        <h2 id="index" class="index">Index</h2>
+        <ul class="index">
+            <li><a href="#Abstract">Abstract</a></li>
+            <li><a href="#Note">Note</a></li>
+            <li><a href="#Hint">Hint</a></li>
+            <li><a href="#Example">Example</a></li>
+            <li><a href="#Thinking">Thinking</a></li>
+            <li><a href="#Refrence">Refrence</a></li>
+            <li><a href="#Information">Information</a></li>
+            <li><a href="#Important">Important</a></li>
+            <li><a href="#Alert/Caution/Warning/Attention">Alert/Caution/Warning/Attention</a></li>
+            <li><a href="#Error">Error</a></li>
+            <li><a href="#Fatal">Fatal</a></li>
+            <li><a href="#Question and Answer">Question and Answer</a></li>
+            <li><a href="#Topic">Topic</a></li>
+            <li><a href="#Quote">Quote</a></li>
+            <li><a href="#Secret">Secret</a></li>
+            <li><a href="#Misc">Misc</a></li>
+        </ul>
+
+        <!-- Abstract -->
+        <h2 id="Abstract">Abstract</h2>
+        <pre class="code_example">
+&lt;div class="admonitions abstract"&gt;
+    &lt;div class="title"&gt; Abstract title&lt;/div&gt;
+    &lt;div&gt;
+        本文
+    &lt;/div&gt;
+&lt;/div&gt;
+        </pre>
+        <div class="admonitions abstract">
+            <div class="title"> Abstract title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions abstract">
+            <div class="title icon2"> Abstract title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions abstract">
+            <div class="title icon3"> Abstract title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+
+        <!-- Note -->
+        <h2 id="Note">Note</h2>
+        <pre class="code_example">
+&lt;div class="admonitions note"&gt;
+    &lt;div class="title"&gt; Note title&lt;/div&gt;
+    &lt;div&gt;
+        本文
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+        <div class="admonitions note">
+            <div class="title"> Note title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions note">
+            <div class="title icon2"> Note title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions note">
+            <div class="title icon3"> Note title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions note">
+            <div class="title icon4"> Note title icon4</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions note">
+            <div class="title icon5"> Note title icon5</div>
+            <div>
+                本文
+            </div>
+        </div>
+        
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+
+        <!--  Hint  -->
+        <h2 id="Hint">Hint</h2>
+        <pre class="code_example">
+&lt;div class="admonitions hint"&gt;
+    &lt;div class="title"&gt; Hint title&lt;/div&gt;
+    &lt;div&gt;
+        本文
+    &lt;/div&gt;
+&lt;/div&gt;
+    </pre>
+        <div class="admonitions hint">
+            <div class="title"> Hint title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions hint">
+            <div class="title icon2"> Hint title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions hint">
+            <div class="title icon3"> Hint title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions hint">
+            <div class="title icon4"> Hint title icon4</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions hint">
+            <div class="title icon5"> Hint title icon5</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions hint">
+            <div class="title icon6"> Hint title icon6</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions hint">
+            <div class="title icon7"> Hint title icon7</div>
+            <div>
+                本文
+            </div>
+        </div>
+
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+
+        <!--  Example  -->
+        <h2 id="Example">Example</h2>
+        <pre class="code_example">
+&lt;div class="admonitions example"&gt;
+	&lt;div class="title"&gt;Example title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+		&lt;pre&gt;
+1st
+2nd
+Sample
+second
+		&lt;/pre&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <div class="admonitions example">
+            <div class="title">Example title</div>
+            <div>
+                本文
+                <pre>
+1st
+2nd
+Sample
+second
+                </pre>
+            </div>
+        </div>
+        <div class="admonitions example">
+            <div class="title icon2">Example title icon2</div>
+            <div>
+                本文
+                <pre>
+1st
+2nd
+Sample
+second
+                </pre>
+            </div>
+        </div>
+        <div class="admonitions example">
+            <div class="title icon3">Example title icon2</div>
+            <div>
+                本文
+                <pre>
+1st
+2nd
+Sample
+second
+                </pre>
+            </div>
+        </div>
+        
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+
+        <!--  Thinking  -->
+        <h2 id="Thinking">Thinking</h2>
+        <pre class="code_example">
+&lt;div class="admonitions thinking"&gt;
+	&lt;div class="title"&gt; thinking title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <div class="admonitions thinking">
+            <div class="title"> thinking title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions thinking">
+            <div class="title icon2"> thinking title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions thinking">
+            <div class="title icon3"> thinking title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions thinking">
+            <div class="title icon4"> thinking title icon4</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions thinking">
+            <div class="title icon5"> thinking title icon5</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions thinking">
+            <div class="title icon6"> thinking title icon6</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions thinking">
+            <div class="title icon7"> thinking title icon7</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions thinking">
+            <div class="title icon8"> thinking title icon8</div>
+            <div>
+                本文
+            </div>
+        </div>
+
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+
+        <!--  Reference  -->
+        <h2 id="Refrence">Refrence</h2>
+        <pre class="code_example">
+&lt;div class="admonitions reference"&gt;
+	&lt;div class="title"&gt;Reference title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <div class="admonitions reference">
+            <div class="title">Reference title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions reference">
+            <div class="title icon2">Reference title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions reference">
+            <div class="title icon3">Reference title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions reference">
+            <div class="title icon4">Reference title icon4</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions reference">
+            <div class="title icon5">Reference title icon5</div>
+            <div>
+                本文
+            </div>
+        </div>
+        
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+
+        <!--  Information  -->
+        <h2 id="Information">Information</h2>
+        <pre class="code_example">
+&lt;div class="admonitions information"&gt;
+	&lt;div class="title"&gt;information title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <div class="admonitions information">
+            <div class="title">information title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions information">
+            <div class="title icon2">information title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions information">
+            <div class="title icon3">information title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions information">
+            <div class="title icon4">information title icon4</div>
+            <div>
+                本文
+            </div>
+        </div>
+
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+
+        <!--  Important  -->
+        <h2 id="Important">Important</h2>
+        <pre class="code_example">
+&lt;div class="admonitions important"&gt;
+	&lt;div class="title"&gt;Important title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <div class="admonitions important">
+            <div class="title">Important title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions important">
+            <div class="title icon2">Important title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions important">
+            <div class="title icon3">Important title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions important">
+            <div class="title icon4">Important title icon4</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions important">
+            <div class="title icon5">Important title icon5</div>
+            <div>
+                本文
+            </div>
+        </div>
+
+        <h3>Misc aboud Important</h3>
+        <pre class="code_example">
+重要な&lt;span class="important_phrase"&gt;語句&lt;/span&gt;の強調表示
+&lt;br&gt;
+重要な&lt;span class="important_phrase2"&gt;語句&lt;/span&gt;の強調表示
+&lt;br&gt;
+重要な&lt;span class="important_phrase3"&gt;語句&lt;/span&gt;の強調表示
+        </pre>
+        <div style="margin:1em 5% 1em 5%">
+            重要な<span class="important_phrase">語句</span>の強調表示
+            <br>
+            重要な<span class="important_phrase2">語句</span>の強調表示
+            <br>
+            重要な<span class="important_phrase3">語句</span>の強調表示
+        </div>
+
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+
+        <!--  Warning  -->
+        <h2 id="Alert/Caution/Warning/Attention">Alert/Caution/Warning/Attention</h2>
+        <pre class="code_example">
+&lt;div class="admonitions warning"&gt;
+	&lt;div class="title"&gt;warning title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <div class="admonitions warning">
+            <div class="title">warning title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions warning">
+            <div class="title icon2">warning title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions warning">
+            <div class="title icon3">warning title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions warning">
+            <div class="title icon4">warning title icon4</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions warning">
+            <div class="title icon5">warning title icon5</div>
+            <div>
+                本文
+            </div>
+        </div>
+        
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+
+        <!--  Error  -->
+        <h2 id="Error">Error</h2>
+        <pre class="code_example">
+&lt;div class="admonitions error"&gt;
+	&lt;div class="title"&gt;error title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <div class="admonitions error">
+            <div class="title">error title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions error">
+            <div class="title icon2">error title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions error">
+            <div class="title icon3">error title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions error">
+            <div class="title icon4">error title icon4</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions error">
+            <div class="title icon5">error title icon5</div>
+            <div>
+                本文
+            </div>
+        </div>
+
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+
+        <!--  Fatal  -->
+        <h2 id="Fatal">Fatal</h2>
+        <pre class="code_example">
+&lt;div class="admonitions fatal"&gt;
+	&lt;div class="title"&gt;fatal title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <div class="admonitions fatal">
+            <div class="title">fatal title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions fatal">
+            <div class="title icon2">fatal title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions fatal">
+            <div class="title icon3">fatal title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions fatal">
+            <div class="title icon4">fatal title icon4</div>
+            <div>
+                本文
+            </div>
+        </div>
+        
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+       <!--  Question and Answer  -->
+       <h2 id="Question and Answer">Question and Answer</h2>
+       <h3>Question</h3>
+        <pre class="code_example">
+&lt;div class="admonitions question"&gt;
+   &lt;div class="title"&gt;question title&lt;/div&gt;
+   &lt;div&gt;
+	   本文
+   &lt;/div&gt;
+&lt;/div&gt;</pre>
+       <div class="admonitions question">
+           <div class="title">question title</div>
+           <div>
+               本文
+           </div>
+       </div>
+       <div class="admonitions question">
+        <div class="title icon2">question title icon2</div>
+            <div>
+                本文
+            </div>
+       </div>
+       <div class="admonitions question">
+        <div class="title icon3">question title icon3</div>
+            <div>
+                本文
+            </div>
+       </div>
+        
+       <div class="index">
+        <span><a href="#index">Index</a></span>
+    </div>
+
+
+       <h3>Answer</h3>
+        <pre class="code_example">
+&lt;div class="admonitions answer"&gt;
+	&lt;div class="title"&gt;answer title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+       <div class="admonitions answer">
+        <div class="title">answer title</div>
+        <div>
+            本文
+        </div>
+      </div>
+      <div class="admonitions answer">
+        <div class="title icon2">answer title icon2</div>
+        <div>
+            本文
+        </div>
+      </div>
+      <div class="admonitions answer">
+        <div class="title icon3">answer title icon3</div>
+        <div>
+            本文
+        </div>
+      </div>
+        
+      <div class="index">
+        <span><a href="#index">Index</a></span>
+    </div>
+
+
+        <!--  Topic  -->
+        <h2 id="Topic">Topic</h2>
+        <pre class="code_example">
+&lt;div class="admonitions topic"&gt;
+	&lt;div class="title"&gt;topic title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <div class="admonitions topic">
+            <div class="title">topic title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions topic">
+            <div class="title icon2">topic title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions topic">
+            <div class="title icon3">topic title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions topic">
+            <div class="title icon4">topic title icon4</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions topic">
+            <div class="title icon5">topic title icon5</div>
+            <div>
+                本文
+            </div>
+        </div>
+
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+        <!--  Quote  -->
+        <h2 id="Quote">Quote</h2>
+        <pre class="code_example">
+&lt;div class="admonitions quote"&gt;
+	&lt;div class="title"&gt;quote title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+		&lt;blockquote&gt;
+		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+		nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+		Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+		nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+		&lt;/blockquote&gt;
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <div class="admonitions quote">
+            <div class="title">quote title</div>
+            <div>
+                本文
+                <blockquote>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </blockquote>
+            </div>
+        </div>
+        <div class="admonitions quote">
+            <div class="title icon2">quote title icon2</div>
+            <div>
+                本文
+                <blockquote>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </blockquote>
+            </div>
+        </div>
+        <div class="admonitions quote quote2">
+            <div class="title">quote2 title</div>
+            <div>
+                本文
+                <blockquote>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </blockquote>
+            </div>
+        </div>
+        <div class="admonitions quote quote2">
+            <div class="title icon2">quote2 title</div>
+            <div>
+                本文
+                <blockquote>
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy
+                    nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                </blockquote>
+            </div>
+        </div>
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+        <!--  Secret  -->
+        <h2 id="Secret">Secret</h2>
+        <pre class="code_example">
+&lt;div class="admonitions secret"&gt;
+	&lt;div class="title"&gt;Secret title&lt;/div&gt;
+	&lt;div&gt;
+		本文
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+        <div class="admonitions secret">
+            <div class="title">secret title</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions secret">
+            <div class="title icon2">secret title icon2</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions secret">
+            <div class="title icon3">secret title icon3</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions secret">
+            <div class="title icon4">secret title icon4</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions secret">
+            <div class="title icon5">secret title icon5</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions secret">
+            <div class="title icon6">secret title icon6</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions secret">
+            <div class="title icon7">secret title icon7</div>
+            <div>
+                本文
+            </div>
+        </div>
+        <div class="admonitions secret">
+            <div class="title icon8">secret title icon8</div>
+            <div>
+                本文
+            </div>
+        </div>
+
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+        <!-- Misc -->
+        <h2 id="Misc">Misc</h2>
+        <!--  PRE for example -->
+        <h3>PRE for example</h3>
+        <pre class="code_example">
+&lt;pre class="code_example"&gt;
+Source code
+&lt;/pre&gt;
+        </pre>
+        <pre class="code_example">
+ECHO ==== [1] initiate 
+IF EXIST %USERPROFILE%\Miniconda3\Scripts\activate.bat (
+    CALL %USERPROFILE%\Miniconda3\Scripts\activate.bat %USERPROFILE%\Miniconda3
+) ELSE IF EXIST %USERPROFILE%\Appdata\Local\Miniconda3\Scripts\activate.bat (
+    CALL %USERPROFILE%\Appdata\Local\Miniconda3\Scripts\activate.bat %USERPROFILE%\Appdata\Local\Miniconda3
+) ELSE IF EXIST C:\ProgramData\Miniconda3\Scripts\activate.bat (
+    CALL C:\ProgramData\Miniconda3\Scripts\activate.bat C:\ProgramData\Miniconda3
+) ELSE (
+    ECHO miniconda was not found
+    GOTO ERROR
+)
+        </pre>
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+        <h3>絵文字</h3>
+        <div class="admonitions reference">
+            <div class="title icon4">Unicode絵文字</div>
+            <div>
+                <ul>
+                    <li><a href="https://www.compart.com/en/unicode/">Unicode - Compart</a></li>
+                    <li><a href="https://unicode.org/emoji/charts/full-emoji-list.html">Full Emoji List, v15.0</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <h4>絵文字セット</h4>
+        <fieldset>
+            <legend>Abstract</legend>
+            📜📃🧾
+        </fieldset>
+        <fieldset>
+            <legend>Note</legend>
+            ☕🍵📃📑📗📝📒📋📧📌🖍🖌🗒
+            <span style="font-size:150%;font-weight: bolder;">🗊🗉🗈</span>
+        </fieldset>
+        <fieldset>
+            <legend>Hint</legend>
+            🔎🔍💎🔮💡🧐👨‍🏫👩‍🏫🕵🧙‍♂️🧙‍♀️🔰🗯💭
+        </fieldset>
+        <fieldset>
+            <legend>Information</legend>
+            🎁👆🔖ℹ😃👍
+            <spam style="font-size: 150%;font-weight: bolder;color:green">ⓘ</spam>
+        </fieldset>
+        <fieldset>
+            <legend>Reference</legend>
+             🧭🗺🌐🌏🗾📘📖📚
+        </fieldset>
+        <fieldset>
+            <legend>Warning</legend>
+            🧨⚠🌋😨😖😲😠🚧💣
+        </fieldset>
+        <fieldset>
+            <legend>Error</legend>
+            🔥🚨😡😵💢
+        </fieldset>
+        <fieldset>
+            <legend>Fatal</legend>
+            ⛔❌💀 ☠⚡🥵🤬😈👿🤒🤢🆖🛑🏴‍☠️
+        </fieldset>
+        <fieldset>
+            <legend>Quote</legend>
+            📦🗨
+        </fieldset>
+        <fieldset>
+            <legend>Thinking</legend>
+            ⏲⏰⏳😒💬🌲⏸🤔🔬📡🧪✏⚗
+        </fieldset>
+        <fieldset>
+            <legend>Important</legend>
+            👊✍🧿🗣👀🔈🔉🔊
+        </fieldset>
+        <fieldset>
+            <legend>Example</legend>
+            👣🐾🍽
+        </fieldset>
+        <fieldset>
+            <legend>Question</legend>
+            ❓Q🤨
+        </fieldset>
+        <fieldset>
+            <legend>Answer</legend>
+            ✔A😉‼
+        </fieldset>
+        <fieldset>
+            <legend>Topic</legend>
+            🛎🔊🐬🏮🚦🐳☄🍿❗👌🚥🔔
+        </fieldset>
+        <fieldset>
+            <legend>Secret</legend>
+            🚫㊙🈲🛂⚔🔐🔑🗝🔒🔇🤐🤫🙈🙉🙊
+        </fieldset>
+
+        <h4>その他</h4>
+        <div style="margin-left:5%;">
+            上で使った以外で、なにか使えそうなものを適当に分類。
+        </div>
+        <fieldset>
+            <legend>Tool</legend>
+            🧰🔩⚒🔧⛏🪓🔨📏📐
+        </fieldset>
+        <fieldset>
+            <legend>Sleep</legend>
+            🛏💤🥱😴😪
+        </fieldset>
+        <fieldset>
+            <legend>Media</legend>
+            📀💿💾
+        </fieldset>
+        <fieldset>
+            <legend>Season</legend>
+            🎍🎎🎏🎐🎑🎋🎄🎃🌊⛄☃❄⛱🎅
+        </fieldset>
+        <fieldset>
+            <legend>Weather</legend>
+            ☔☂🌂🌈🌀🌬🌫🌪🌩🌨🌧🌦🌥🌤⛈⛅☁🌞☀🌡
+        </fieldset>
+        <fieldset>
+            <legend>Transport</legend>
+            🚀🚡🚠🚟🚁🛫🚢⛴🛶⛵⚓🛤🛣🛵🚜🚛🚚🚙🚘🚗🚖🚕🚔🚓🚒🚑🚐🚎🚍🚌🚋🚞🚝🚊🚉🚈🚅🚄🚃🚂
+        </fieldset>
+        <fieldset>
+            <legend>Building</legend>
+            ⛪🗼🏰🏯🏭🏬🏫🏪🏨🏦🏥🏤🏣🏢🏡🏠🏚🏘🌇🌆🌃🌁🏙⛩🏛🏟
+        </fieldset>
+        <fieldset>
+            <legend>Hand Sign and body parts</legend>
+            👈👉👆👇☝👍👎✊✌👌✋🤚👋🖐👏🤲🤝🙏
+            💪🦵🦶👂👃🦷👁👅👄
+        </fieldset>
+        <fieldset>
+            <legend>Gesture</legend>
+            🙍‍♂️🙍‍♀️🙎‍♂️🙎‍♀️🙅‍♂️🙅‍♀️🙆‍♂️🙆‍♀️🙇‍♂️🙇‍♀️🤦‍♂️🤦‍♀️🙋‍♂️🙋‍♀️🧎‍♂️🧍‍♂️🚶🚶‍♂️🏃
+        </fieldset>
+        <fieldset>
+            <legend>Profession</legend>
+            👨‍⚕️👩‍⚕️👨‍🎓👩‍🎓👨‍⚖️👩‍⚖️👨‍🌾👩‍🌾👨‍🍳👩‍🍳👨‍🔧👩‍🔧👨‍🏭👩‍🏭👨‍💼👩‍💼👨‍🔬👩‍🔬👨‍💻👩‍💻
+            👨‍🎨👩‍🎨👨‍✈️👩‍✈️👨‍🚀👩‍🚀👨‍🚒👩‍🚒👮‍♂️👮‍♀️🕵️‍♂️🕵️‍♀️👷‍♂️👷‍♀️
+        </fieldset>
+        <fieldset>
+            <legend>その他の使えそうな絵文字</legend>
+            🆗📍🍙🎤🎧⏱©»«📰🏷🔖💰📫📁📂🗂📅📆🗓📈📉📊🗑⚙🩹🧹🛃🕯🎬📽🎞🎥🧮⌨🖱🖥💻🔋☎📞🎵🔕
+            🎓🎨🖼🎴🀄🃏🎲🎰🕹🎮🎯🏈⭐🌅🌄⛺🏕🗻🏝⛰🧊🍶
+            🍥🍖☘🍀🌳🌴🥚🐣🐤🐥🐓🧟‍♂️🧟‍♀️
+            👁️‍🗨️💨
+        </fieldset>
+
+        <div class="index">
+            <span><a href="#index">Index</a></span>
+        </div>
+
+        <h3>CSS Sample</h3>
+        <style type="text/css">
+            .running::before {
+                width: 1.1em;
+                content:"🧎‍♂️";
+                display:inline-block;
+                animation: running_animation 2.5s steps(1,jump-end) infinite;
+            }
+            @keyframes running_animation {
+                0% {content:"🧎‍♂️";}
+                20% {content:"🧍‍♂️";}
+                40% {content:"🚶";}
+                60% {content:"🏃";}
+                100% {content:"🧎‍♂️";}
+            }
+            .dash_animation {
+                padding-left:0;
+            }
+            .dash_animation::after {
+                content:"💨";
+                padding-left:0;
+                margin-left:0;
+                display:inline-block;
+                animation: dash_animation 0.5s steps(2,jump-start) infinite;
+            }
+            @keyframes dash_animation {
+                0% { padding-left:0em;}
+                50% { padding-left:0.5em;}
+                100% { padding-left:1em;}
+            }
+            .rotate_arrow::before {
+                content:"➪";
+                animation: rotate_arrow_animation 2s linear infinite;
+                color:red;
+            }
+            @keyframes rotate_arrow_animation {
+                0% {content:"➫";}
+                50% {content:"➪";}
+                100% {content:"➬";}
+            }
+            .bird_growth::before{
+                width: 1.5em;
+                content:"🥚";
+                text-align: center;
+                display:inline-block;
+                animation: bird_growth_animation 3s infinite;
+            }
+            @keyframes bird_growth_animation {
+                0% {content:"🥚";}
+                20% {content:"🐣";}
+                40% {content:"🐥";}
+                60% {content:"🐤";}
+                80% {content:"🐓";}
+                100% {content:"🥚";}
+            }
+            .siren::before {
+                width: 1.5em;
+                content:"🔈";
+                text-align: left;
+                display: inline-block;
+                animation: siren_animation 0.6s infinite;
+            }
+            @keyframes siren_animation {
+                0% { content:"🔈";}
+                33% { content:"🔉";}
+                66% { content:"🔊";}
+                100% { content:"🔈";}
+            }
+
+            .linear_color {
+                animation: linear_color_animation 9s infinite linear;
+            }
+            @keyframes linear_color_animation {
+                0%   { background: #33CCCC; }
+                20%  { background: #33CC36; }
+                40%  { background: #B8CC33; }
+                60%  { background: #FCCA00; }
+                80%  { background: #33CC36; }
+                100% { background: #33CCCC; }
+            }
+
+            /* 簡単CSSアニメーション＆デザイン20選（ソースコードと解説付き） | knowledge / baigie https://baigie.me/officialblog/2021/02/25/css-tips-1/ */
+            span.highlight {
+                position: relative;
+                background: linear-gradient(transparent 40%, yellow 40%);
+            }
+
+            .vibration {
+                display: inline-block;
+                animation: vibration_animation 0.5s  infinite;
+            }
+            .vibration_horaizontal {
+                display: inline-block;
+                animation: vibration_horizontal_animation 0.5s  infinite;
+            }
+            .vibration_vertical {
+                display: inline-block;
+                animation: vibration_vertical_animation 0.5s  infinite;
+            }
+        </style>
+        <div style="margin-left:5%">
+            <div class="rotateX" style="font-size:200%;display:inline-block;">重要</div>
+            <div class="rotateY" style="font-size:200%;display:inline-block;">重要</div>
+            <div class="linear_color" style="font-size:200%;display:inline-block;">重要</div>
+            <div style="font-size:200%;"><span class="vibration">重要</span></div>
+            <div style="font-size:200%;"><span class="vibration_horaizontal">重要</span></div>
+            <div style="font-size:200%;"><span class="vibration_vertical">重要</span></div>
+            <div style="font-size:200%;"><span class="flipX">重要</span></div>
+            <div style="font-size:200%;"><span class="important_press">👊</span>強調</div>
+            <div class="rotate_360" style="font-size:200%;display:inline-block;">⚙</div>
+            <div class="rotate_360" style="font-size:200%;display:inline-block;">🍥</div>
+            <div class="rotate_360" style="font-size:200%;display:inline-block;">😵</div>
+            <div class="rotate_arrow" style="font-size:200%;display:inline-block;">🍥</div>
+            <br>
+            <div class="dash_animation" style="font-size:200%;display:inline-block;">DASH!</div>DASH
+            <br>
+            <div class="bird_growth" style="font-size:200%;display:inline-block;">bird_growth</div>
+            <div class="siren" style="font-size:200%;display:inline-block;">siren</div>
+            <div class="running" style="font-size:200%;display:inline-block;">running</div>
+
+            <div class="index">
+                <span><a href="#index">Index</a></span>
+            </div>
+        </div>
+    </body>
+</html>
+
+

@@ -1,0 +1,938 @@
+.admonitions {
+    margin: 1em 10% 1em 10%;
+    padding:0;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    border-radius: 5px;
+    border-left-width:1em;
+    border-style:solid;
+}
+.admonitions > .title {
+    padding: 0.5em 1em 0.5em 0.5em;
+    border-radius: 0px;
+    font-family:apple color emoji,segoe ui emoji,noto color emoji,android emoji,emojisymbols,emojione mozilla,twemoji mozilla,segoe ui symbol;
+}
+.admonitions > div {
+    padding: 0.5em 1em 0.5em 1em;
+}
+
+/* ---- Abstract ---- */
+.abstract {
+    border-color:rgb(146, 147, 147);
+    border-left-color: rgb(80, 81, 81);
+}
+.abstract > .title {
+    background-color: rgb(252, 252, 252);
+    border-bottom: solid rgb(193, 191, 191);
+    font-size:large;
+    font-weight: bolder;
+}
+.abstract > .title::before {
+    content:"📜 ";
+    font-size: 150% ;
+    vertical-align:middle;
+}
+.abstract > .icon2::before {
+    content:"📃 ";
+    font-size: 150% ;
+}
+.abstract > .icon3::before {
+    content:"🧾 ";
+    font-size: 150% ;
+}
+
+/* ---- Note ---- */
+.note {
+    border-color:lightblue;
+    border-left-color: rgb(42, 167, 250);
+}
+.note > .title {
+    background-color: rgb(176, 239, 247);
+    font-size:large;
+    font-weight: bolder;
+}
+.note > .title::before {
+    content:"📝 ";
+    font-size: 150% ;
+    vertical-align:middle;
+}
+.note > .icon2::before {
+    content:"📌 ";
+    font-size: 150% ;
+}
+.note > .icon3::before {
+    content:"☕ ";
+    font-size: 150% ;
+}
+.note > .icon4::before {
+    content:"🍵 ";
+    font-size: 150% ;
+}
+.note > .icon5::before {
+    content:"📧 ";
+    font-size: 150% ;
+}
+
+/* ---- Hint ---- */
+.hint {
+    border-color:lightgreen;
+    border-left-color: rgb(42, 250, 146);
+}
+.hint > .title {
+    background-color: rgb(208, 253, 222);
+    font-size:large;
+    font-weight: bolder;
+}
+.hint > .title::before {
+    content:"🔎 ";
+    font-size: 150% ;
+    vertical-align:middle;
+}
+.hint > .icon2::before {
+    content:"🔰 ";
+    font-size: 150% ;
+}
+.hint > .icon3::before {
+    content:"💡 ";
+    font-size: 150% ;
+}
+.hint > .icon4::before {
+    content:"👩‍🏫 ";
+    font-size: 150% ;
+}
+.hint > .icon5::before {
+    content:"🔮 ";
+    font-size: 150% ;
+}
+.hint > .icon6::before {
+    content:"💭 ";
+    font-size: 150% ;
+}
+.hint > .icon7::before {
+    content:"🗯 ";
+    font-size: 150% ;
+}
+
+/* ---- Example ---- */
+.example {
+    border-color:rgb(0, 254, 241);
+    border-left-color: rgb(165, 237, 237);
+}
+.example > .title {
+    background-color: rgb(165, 237, 237);
+    font-size:large;
+    font-weight: bolder;
+}
+.example pre {
+    background-color: rgb(235, 252, 252);
+    font-family: monospace;
+    font-size: 90%;
+    color:darkblue;
+    text-align: left;
+    white-space: pre;
+    word-break: keep-all;
+    border-left: solid 4pt rgb(143, 143, 244);
+    border-right: solid 1pt black;
+    margin:0.5em 1em 0.5em 1em;
+    padding:0.5em 0 0.5em 0.5em;
+    display:block;
+    overflow-y: auto;
+}
+.example > .title::before {
+    content:"👣 ";
+    font-size: 150% ;
+    vertical-align:middle;
+}
+.example > .icon2::before {
+    content:"🐾 ";
+    font-size: 150% ;
+}
+.example > .icon3::before {
+    content:"🍽 ";
+    font-size: 150% ;
+}
+
+/* ---- Thinking ---- */
+@keyframes animation_thinking_rotation {
+    0% { transform: rotate(0deg);}
+    33% { transform: rotate(-10deg);}
+    66% { transform: rotate(10deg);}
+    100% { transform: rotate(0deg);}
+}
+.thinking {
+    border-color:rgb(144, 195, 119);
+    border-left-color: rgb(1, 146, 73);
+}
+.thinking > .title {
+    background-color: rgb(153, 212, 172);
+    font-size:large;
+    font-weight: bolder;
+}
+.thinking > .title::before {
+    margin-right: 0.25em;
+    content:"⏳ ";
+    font-size: 150% ;
+    vertical-align:middle;
+    animation: animation_thinking_rotation 3s infinite linear;
+    display: inline-block;
+}
+.thinking > .icon2::before {
+    content:"⏲ ";
+    font-size: 150% ;
+}
+.thinking > .icon3::before {
+    content:"💬 ";
+    font-size: 150% ;
+}
+.thinking > .icon4::before {
+    content:"🤔 ";
+    font-size: 150% ;
+}
+.thinking > .icon5::before {
+    content:"✏ ";
+    font-size: 150% ;
+}
+.thinking > .icon6::before {
+    content:"🌲 ";
+    font-size: 150% ;
+}
+.thinking > .icon7::before {
+    content:"🕛 ";
+    font-size: 150% ;
+    animation: clock_animation 12s infinite linear;
+}
+.thinking > .icon8::before{
+    width: 1.5em;
+    content:"🥚";
+    font-size: 150% ;
+    text-align: center;
+    animation:  thinking_bird_growth_animation 3s steps(1, jump-end) infinite;
+}
+@keyframes thinking_bird_growth_animation {
+    0% {content:"🥚";}
+    15% {content:"🐣";}
+    30% {content:"🐥";}
+    45% {content:"🐤";}
+    60% {content:"🐓";}
+    100% {content:"🥚";}
+}
+@keyframes clock_animation {
+    0%   { content:"🕛"; }
+    8.33%   { content:"🕐"; }
+    16.67%   { content:"🕑"; }
+    25%   { content:"🕒"; }
+    33.33%   { content:"🕓"; }
+    41.67%   { content:"🕔"; }
+    50%   { content:"🕕"; }
+    58.33%   { content:"🕖"; }
+    66.67%   { content:"🕗"; }
+    75%   { content:"🕘"; }
+    83.33%   { content:"🕙"; }
+    91.67%   { content:"🕚"; }
+    100%   { content:"🕛"; }
+}
+
+/* ---- Information ---- */
+.information {
+    border-color:lightblue;
+    border-left-color: rgb(42, 167, 250);
+}
+.information > .title {
+    background-color: rgb(185, 246, 253);
+    font-size:large;
+    font-weight: bolder;
+}
+.information > .title::before {
+    content:"ⓘ ";
+    font-size: 175% ;
+    font-weight:bolder;
+    color:rgb(2, 43, 243);
+    vertical-align:middle;
+}
+.information > .icon2::before {
+    content:"🎁 ";
+    font-size: 150% ;
+}
+.information > .icon2::before {
+    content:"🔖 ";
+    font-size: 150% ;
+}
+.information > .icon3::before {
+    content:"👍 ";
+    font-size: 150% ;
+}
+.information > .icon4::before {
+    content:"🧐 ";
+    font-size: 150% ;
+}
+
+/* ---- Reference ---- */
+.reference {
+    border-color:lightgrey;
+    border-left-color: rgb(201, 201, 201);
+}
+.reference > .title {
+    background-color: rgb(244, 244, 244);
+    font-size:large;
+    font-weight: bolder;
+}
+.reference > .title::before {
+    content:"📘 ";
+    font-size: 150% ;
+    vertical-align:middle;
+}
+.reference > .icon2::before {
+    content:"📖 ";
+    font-size: 150% ;
+}
+.reference > .icon3::before {
+    content:"📚 ";
+    font-size: 150% ;
+}
+.reference > .icon4::before {
+    content:"🌏 ";
+    font-size: 150% ;
+}
+.reference > .icon5::before {
+    content:"🗺 ";
+    font-size: 150% ;
+}
+
+/* ---- Important ---- */
+.important {
+    border-color:rgb(206, 233, 255);
+    border-left-color: rgb(1, 85, 210);
+}
+.important > .title {
+    background-color: rgb(206, 233, 255);
+    font-size:large;
+    font-weight: bolder;
+}
+.important > .title::before {
+    margin-right: 0.25em;
+    content:"🧿 ";
+    font-size: 150% ;
+    font-weight:bolder;
+    vertical-align:middle;
+    display: inline-block;
+    animation: important_press_animation 2s infinite linear;
+}
+.important > .icon2::before {
+    content:"👊 ";
+    font-size: 150% ;
+    font-weight:bolder;
+}
+.important > .icon3::before {
+    content:"👀 ";
+    font-size: 150% ;
+    font-weight:bolder;
+    display: inline-block;
+    animation: 2s anim-flipX steps(2,jump-none) infinite;
+}
+.important > .icon4::before {
+    margin-right:0.25em;
+    content:"✍ ";
+    font-size: 150% ;
+    font-weight:bolder;
+    font-weight:bolder;
+    color:red;
+    display:inline-block;
+    animation: animation_thinking_rotation 1.5s infinite linear;
+}
+.important > .icon5::before {
+    content:"🗣 ";
+    font-size: 150% ;
+    font-weight:bolder;
+    color:red;
+}
+
+span.important_phrase {
+    margin-left:0.1em;
+    margin-right:0.1em;
+    display:inline-block;
+    font-weight: bolder;
+    color:red;
+    vertical-align:middle;
+}
+span.important_phrase::before {
+    width: 1em;
+    margin-right:0.25em;
+    display:inline-block;
+    content: "▏";
+    font-weight: bolder;
+    color:red;
+    animation: 1s important_phrase_animation linear infinite;
+}
+span.important_phrase::after {
+    width: 1em;
+    margin-left:0.25em;
+    display:inline-block;
+    content: "▏";
+    font-weight: bolder;
+    color:red;
+    animation: 1s important_phrase_animation linear infinite;
+    transform: scale(-1,1);
+}
+span.important_phrase2 {
+    margin-left:0.1em;
+    margin-right:0.1em;
+    display:inline-block;
+    font-weight: bolder;
+    color:blue;
+    vertical-align:middle;
+}
+span.important_phrase2::before {
+    width: 1em;
+    margin-right:0.25em;
+    display:inline-block;
+    content: "▏";
+    font-weight: bolder;
+    color:blue;
+    animation: 1s important_phrase_animation linear infinite;
+    transform: scale(-1,1);
+}
+span.important_phrase2::after {
+    width: 1em;
+    margin-left:0.25em;
+    display:inline-block;
+    content: "▏";
+    font-weight: bolder;
+    color:blue;
+    animation: 1s important_phrase_animation linear infinite;
+}
+@keyframes important_phrase_animation {
+    0% {content:"▏";}
+    12.5% {content:"▎";}
+    25% {content:"▍";}
+    37.5% {content:"▌";}
+    50% {content:"▋";}
+    62.5% {content:"▊";}
+    75% {content:"▉";}
+    100% {content:"█";}
+}
+span.important_phrase3 {
+    margin-left:0.1em;
+    margin-right:0.1em;
+    display:inline-block;
+    font-weight: bolder;
+    color:red;
+    vertical-align:middle;
+}
+span.important_phrase3::before {
+    width: 1.5em;
+    content:"🔈";
+    text-align: left;
+    display: inline-block;
+    animation: important_siren_animation 0.6s infinite;
+}
+@keyframes important_siren_animation {
+    0% { content:"🔈";}
+    33% { content:"🔉";}
+    66% { content:"🔊";}
+    100% { content:"🔈";}
+}
+
+/* ---- Warning ---- */
+.warning {
+    border-color:lightgoldenrodyellow;
+    border-left-color: rgb(237, 229, 2);
+}
+.warning > .title {
+    background-color: rgb(253, 255, 206);
+    font-size:large;
+    font-weight: bolder;
+}
+.warning > .title::before {
+    margin-right:0.25em;
+    content:"⚠ ";
+    font-size: 150% ;
+    font-weight:bolder;
+    font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant-emoji: emoji;
+    color:red;
+    vertical-align:middle;
+    display: inline-block;
+    animation: vibration_horizontal_animation 0.5s  infinite;
+    }
+.warning > .icon2::before {
+    content:"💣 ";
+    font-size: 150% ;
+    animation: vibration_animation 0.5s  infinite;
+}
+.warning > .icon3::before {
+    content:"🌋 ";
+    font-size: 150% ;
+}
+.warning > .icon4::before {
+    content:"😨 ";
+    font-size: 150% ;
+}
+.warning > .icon5::before {
+    content:"🚧 ";
+    font-size: 150% ;
+}
+/* CSSだけでブルブル震わせる | q-Az https://q-az.net/buruburu-hurueru-css/ */
+@keyframes vibration_animation {
+    0% {transform: translate(0px, 0px) rotateZ(0deg)}
+    25% {transform: translate(2px, 2px) rotateZ(1deg)}
+    50% {transform: translate(0px, 2px) rotateZ(0deg)}
+    75% {transform: translate(2px, 0px) rotateZ(-1deg)}
+    100% {transform: translate(0px, 0px) rotateZ(0deg)}
+}
+@keyframes vibration_horizontal_animation {
+    0% {transform: translate(0px, 0px)}
+    25% {transform: translate(2px, 0px)}
+    50% {transform: translate(0px, 0px)}
+    75% {transform: translate(2px, 0px)}
+    100% {transform: translate(0px, 0px)}
+}
+@keyframes vibration_vertical_animation {
+    0% {transform: translate(0px, 0px)}
+    25% {transform: translate(0px, 2px)}
+    50% {transform: translate(0px, 0px)}
+    75% {transform: translate(0px, 2px)}
+    100% {transform: translate(0px, 0px)}
+}
+
+/* ---- Error ---- */
+@keyframes animation_error_color {
+    0% { border-color: rgb(250, 160, 124);}
+    50% { border-color: rgb(241, 92, 33);}
+    100% { border-color: rgb(250, 160, 124);}
+}
+.error {
+    border-color:lightsalmon;
+    border-left-color: rgb(248, 160, 101);
+    animation: animation_error_color 3s infinite linear;
+}
+.error > .title {
+    background-color: rgb(251, 196, 175);
+    font-size:large;
+    font-weight: bolder;
+}
+.error > .title::before {
+    content:"🔥 ";
+    font-size: 175% ;
+    vertical-align:middle;
+    margin-right:0.25em;
+    display:inline-block;
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+.error > .icon2::before {
+    content:"🚨 ";
+    font-size: 175% ;
+}
+.error > .icon3::before {
+    content:"😡 ";
+    font-size: 175% ;
+}
+.error > .icon4::before {
+    content:"💢 ";
+    font-size: 175% ;
+}
+.error > .icon5::before {
+    content:"😵 ";
+    font-size: 175% ;
+    animation: rotate_360_animation 2s linear infinite;
+}
+
+/* ---- Fatal ---- */
+@keyframes animation_fatal_color {
+    0% { border-color: rgb(249, 73, 73);}
+    50% { border-color: rgb(248, 168, 168);}
+    100% { border-color: rgb(249, 73, 73);}
+}
+.fatal {
+    border-color:lightcoral;
+    border-left-color: rgb(248, 101, 101);
+    animation: animation_fatal_color 2s infinite linear;
+}
+.fatal > .title {
+    background-color: rgb(251, 175, 175);
+    font-size:large;
+    font-weight: bolder;
+}
+.fatal > .title::before {
+    content:"💀 ";
+    font-size: 175% ;
+    margin-right:0.25em;
+    vertical-align:middle;
+    display:inline-block;
+    animation: 4s anim-rotateX ease infinite;
+}
+.fatal > .icon2::before {
+    content:"⛔ ";
+    font-size: 175% ;
+}
+.fatal > .icon3::before {
+    content:"🆖 ";
+    font-size: 175% ;
+}
+.fatal > .icon4::before {
+    content:"🥵 ";
+    font-size: 175% ;
+}
+
+/* ---- Question ---- */
+.question {
+    border-color:lightblue;
+    border-left-color: rgb(101, 113, 248);
+}
+.question > .title {
+    background-color: lightskyblue;
+    font-size:large;
+    font-weight: bolder;
+}
+.question > .title::before {
+    content:"❓ ";
+    font-size: 175% ;
+    vertical-align:middle;
+}
+.question > .icon2::before {
+    content:"Q ";
+    font-size: 175% ;
+}
+.question > .icon3::before {
+    content:"🤨 ";
+    font-size: 175% ;
+}
+
+/* ---- Answer ---- */
+.answer {
+    border-color:lightblue;
+    border-left-color: rgb(101, 113, 248);
+}
+.answer > .title {
+    background-color: lightskyblue;
+    font-size:large;
+    font-weight: bolder;
+}
+.answer > .title::before {
+    content:"✔ ";
+    font-size: 175% ;
+    vertical-align:middle;
+}
+.answer > .icon2::before {
+    content:"A ";
+    font-size: 175% ;
+}
+.answer > .icon3::before {
+    content:"😉 ";
+    font-size: 175% ;
+}
+
+/* ---- Topic ---- */
+.topic {
+    border-color:rgb(137, 172, 171);
+    border-left-color:#6dcd98;
+}
+.topic > .title {
+    background-color: rgb(162, 212, 174);
+    font-size:large;
+    font-weight: bolder;
+}
+.topic > .title::before {
+    content:"🛎 ";
+    font-size: 175% ;
+    vertical-align:middle;
+}
+.topic > .icon2::before {
+    content:"🔊 ";
+    font-size: 175% ;
+    vertical-align:middle;
+}
+.topic > .icon3::before {
+    content:"🐬 ";
+    font-size: 175% ;
+    vertical-align:middle;
+}
+.topic > .icon4::before {
+    content:"🏮 ";
+    font-size: 175% ;
+    vertical-align:middle;
+}
+.topic > .icon5::before {
+    content:"🚦 ";
+    font-size: 175% ;
+    vertical-align:middle;
+}
+
+/* ---- Quote ---- */
+.quote {
+    border-color:lightslategray;
+    border-left-color: rgb(75, 74, 74);
+}
+.quote > .title {
+    background-color: rgb(176, 175, 175);
+    font-size:large;
+    font-weight: bolder;
+}
+.quote > .title::before {
+    content:"📦 ";
+    font-size: 175% ;
+    vertical-align:middle;
+}
+.quote > .title::after {
+    content:"";
+}
+.quote > .icon2::before {
+    content:"🗨 ";
+    font-size: 200% ;
+    color:white;
+}
+.quote blockquote {
+    margin-top: 0em;
+    margin-left: 0em;
+    padding-left: 2em;
+    text-indent: -1.25em;
+}
+.quote blockquote::before {
+    content:"❝";
+    font-size: 200% ;
+    color:rgb(159, 159, 159);
+}
+.quote blockquote::after {
+    content:"\A\A❞";
+    font-size: 200% ;
+    white-space: pre;
+    line-height: 0.5em;
+    color:rgb(159, 159, 159);
+}
+.quote2 blockquote::before {
+    content:"『\A";
+    white-space: pre;
+    font-size: 150% ;
+}
+.quote2 blockquote::after {
+    content:"\A\A』";
+    font-size: 150% ;
+    white-space: pre;
+    line-height: 0.5em;
+}
+
+/* ---- Secret ---- */
+.secret {
+    border-color:rgb(253, 1, 1);
+    border-left-color: rgb(255, 1, 1);
+}
+.secret > .title {
+    background-color: rgb(252, 203, 203);
+    font-size:large;
+    font-weight: bolder;
+}
+.secret > .title::before {
+    content:"㊙ ";
+    font-size: 200% ;
+    font-weight:bolder;
+    font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant-emoji: emoji;
+    color:red;
+    vertical-align:middle;
+}
+.secret > .icon2::before {
+    content:"🔐 ";
+    font-size: 150% ;
+    font-weight:bolder;
+    font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant-emoji: emoji;
+    color:red;
+    vertical-align:middle;
+}
+.secret > .icon3::before {
+    content:"🛂 ";
+    font-size: 150% ;
+    font-weight:bolder;
+    font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant-emoji: emoji;
+    color:red;
+    vertical-align:middle;
+}
+.secret > .icon4::before {
+    content:"🤐 ";
+    font-size: 150% ;
+    font-weight:bolder;
+    font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant-emoji: emoji;
+    color:red;
+    vertical-align:middle;
+}
+.secret > .icon5::before {
+    content:"🤫 ";
+    font-size: 150% ;
+    font-weight:bolder;
+    font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant-emoji: emoji;
+    color:red;
+    vertical-align:middle;
+}
+.secret > .icon6::before {
+    content:"🈲 ";
+    font-size: 200%;
+    font-weight:bolder;
+    font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant-emoji: emoji;
+    color:red;
+    vertical-align:middle;
+}
+.secret > .icon7::before {
+    content:"🔇 ";
+    font-size: 150% ;
+    font-weight:bolder;
+    font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant-emoji: emoji;
+    color:red;
+    vertical-align:middle;
+}
+@keyframes secret_monkey_animation {
+    0% {content:"🙈";}
+    33% {content:"🙉";}
+    66% {content:"🙊";}
+    100% {content:"🙈";}
+}
+.secret > .icon8::before {
+    content:"🙈 ";
+    margin-right:0.25em;
+    font-size: 150% ;
+    font-weight:bolder;
+    font-family:arial Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-variant-emoji: emoji;
+    color:red;
+    vertical-align:middle;
+    display: inline-block;
+    animation: secret_monkey_animation 3s steps(3,jump-end)  infinite;
+}
+
+/* PRE */
+pre.code_example {
+    background-color: rgb(235, 252, 252);
+    font-family: monospace;
+    font-size: 90%;
+    color:darkblue;
+    text-align: left;
+    white-space: pre;
+    word-break: keep-all;
+    border-left: solid 4pt rgb(143, 143, 244);
+    border-right: dotted 1pt black;
+    margin:0.5em 5% 0.5em 5%;
+    padding:0.5em 0.5em 0.5em 0.5em;
+    display: block;
+    overflow-y: auto;
+}
+.rotate_360 {
+    animation: rotate_360_animation 2s linear infinite;
+}
+@keyframes rotate_360_animation {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+/* text-color-animation https://codepen.io/alvarotrigo/pen/PoKMyNO */
+.colorful-animate-charcter
+    {
+        text-transform: uppercase;
+        background-image: linear-gradient(
+            -225deg,
+            #231557 0%,
+            #44107a 29%,
+            #ff1361 67%,
+            #fff800 100%
+        );
+        background-size: auto auto;
+        background-clip: border-box;
+        background-size: 200% auto;
+        background-clip: text;
+        text-fill-color: transparent;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        animation:textclip 2s linear infinite;
+    }
+
+@keyframes textclip {
+    to {
+        background-position: 200% center;
+    }
+}
+.flipX {
+    display: inline-block;
+    animation: 2s anim-flipX steps(2,jump-none) infinite;
+}
+@keyframes anim-flipX {
+    0% {
+        opacity: 1;
+        transform: scale(1, 1);;
+    }
+    50% {
+        opacity: 1;
+        transform: scale(-1, 1);;
+    }
+    100% {
+        /* animate nothing to pause animation at the end */
+        opacity: 1;
+        transform: scale(1, 1);;
+    }
+}
+.important_press {
+    display: inline-block;
+    animation: important_press_animation 2s infinite linear;
+}
+@keyframes important_press_animation {
+    0%   { transform: scale(1,1);}
+    50%   { transform: scale(0.8,0.8);}
+    100%   { transform: scale(1,1);}
+}
+/* Pure CSS text basic animations https://codepen.io/alvarotrigo/pen/NWvQObB */
+/* flip around X */
+.rotateX {
+    display: block;
+    animation: 4s anim-rotateX ease infinite;
+}
+@keyframes anim-rotateX {
+    0% {
+        opacity: 0;
+        transform: rotateX(90deg);
+    }
+    50% {
+        opacity: 1;
+        transform: rotateX(720deg);
+    }
+    100% {
+        /* animate nothing to pause animation at the end */
+        opacity: 1;
+        transform: rotateX(720deg);
+    }
+}
+/* flip around Y */
+.rotateY {
+    animation-name: spin, depth;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 6s;
+}
+@keyframes spin {
+    0% {
+        transform: rotateY(0deg);
+    }
+    100% {
+        transform: rotateY(-360deg);
+    }
+}
+@keyframes depth {
+    0% {
+        text-shadow: 0 0 black;
+    }
+    25% {
+        text-shadow: 1px 0 black, 2px 0 black, 3px 0 black, 4px 0 black, 5px 0 black;
+    }
+    50% {
+        text-shadow: 0 0 black;
+    }
+    75% {
+        text-shadow: -1px 0 black, -2px 0 black, -3px 0 black, -4px 0 black,
+        -5px 0 black;
+    }
+    100% {
+        text-shadow: 0 0 black;
+    }
+}
